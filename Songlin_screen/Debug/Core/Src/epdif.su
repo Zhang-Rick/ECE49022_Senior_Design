@@ -1,0 +1,5 @@
+epdif.c:55:6:EpdDigitalWriteCallback	16	static
+epdif.c:63:5:EpdDigitalReadCallback	16	static
+epdif.c:71:6:EpdDelayMsCallback	16	static
+epdif.c:75:6:EpdSpiTransferCallback	16	static
+epdif.c:81:5:EpdInitCallback	8	static

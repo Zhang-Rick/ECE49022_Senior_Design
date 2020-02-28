@@ -1,0 +1,5 @@
+main.c:275:5:main	64	static
+main.c:376:6:SystemClock_Config	104	static
+main.c:420:6:MX_SPI1_Init	8	static
+main.c:460:6:MX_USART1_UART_Init	8	static
+main.c:495:6:MX_GPIO_Init	56	static

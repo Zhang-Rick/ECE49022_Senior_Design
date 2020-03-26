@@ -1,0 +1,17 @@
+fastfs_sd.c:21:13:SELECT	8	static
+fastfs_sd.c:27:13:DESELECT	8	static
+fastfs_sd.c:35:13:SPI_TxByte	16	static
+fastfs_sd.c:42:16:SPI_RxByte	24	static
+fastfs_sd.c:55:13:SPI_RxBytePtr	16	static
+fastfs_sd.c:62:16:SD_ReadyWait	24	static
+fastfs_sd.c:80:13:SD_PowerOn	32	static
+fastfs_sd.c:124:13:SD_PowerOff	8	static
+fastfs_sd.c:130:16:SD_CheckPower	8	static
+fastfs_sd.c:137:13:SD_RxDataBlock	32	static
+fastfs_sd.c:171:13:SD_TxDataBlock	32	static
+fastfs_sd.c:222:13:SD_SendCmd	32	static
+fastfs_sd.c:271:9:SD_disk_initialize	32	static
+fastfs_sd.c:375:9:SD_disk_status	16	static
+fastfs_sd.c:384:9:SD_disk_read	24	static
+fastfs_sd.c:428:9:SD_disk_write	24	static
+fastfs_sd.c:483:9:SD_disk_ioctl	56	static

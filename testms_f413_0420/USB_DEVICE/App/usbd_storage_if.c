@@ -236,7 +236,7 @@ int8_t STORAGE_IsWriteProtected_FS(uint8_t lun)
 int8_t STORAGE_Read_FS(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t blk_len)
 {
   /* USER CODE BEGIN 6 */
-//	memcpy(buf, &buffer[blk_addr*STORAGE_BLK_SIZ], blk_len*STORAGE_BLK_SIZ);
+	//memcpy(buf, &buffer[blk_addr*STORAGE_BLK_SIZ], blk_len*STORAGE_BLK_SIZ);
 	//HAL_SD_ReadBlocks(&hsd, (uint32_t*)buf, (uint64_t)(blk_addr * BLOCK_SIZE), BLOCK_SIZE, blk_len);
 	HAL_SD_ReadBlocks(&hsd, buf, blk_addr, (uint32_t) blk_len, 10);
   return (USBD_OK);
@@ -248,12 +248,28 @@ int8_t STORAGE_Read_FS(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t bl
   * @param  lun: .
   * @retval USBD_OK if all operations are OK else USBD_FAIL
   */
+int timeout;
 int8_t STORAGE_Write_FS(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t blk_len)
 {
   /* USER CODE BEGIN 7 */
-//	memcpy(&buffer[blk_addr*STORAGE_BLK_SIZ], buf, blk_len*STORAGE_BLK_SIZ);
+	//memcpy(&buffer[blk_addr*STORAGE_BLK_SIZ], buf, blk_len*STORAGE_BLK_SIZ);
 	//HAL_SD_WriteBlocks(&hsd, (uint32_t*)buf, (uint64_t)(blk_addr * BLOCK_SIZE), BLOCK_SIZE, blk_len);
-	HAL_SD_WriteBlocks(&hsd, buf, blk_addr, (uint32_t) blk_len, 10);
+	//HAL_SD_WriteBlocks(&hsd, buf, blk_addr, (uint32_t) blk_len, 10);
+	if (HAL_SD_WriteBlocks(&hsd, buf, blk_addr, (uint32_t) blk_len, 10) == HAL_OK)
+	{
+	/* Wait that writing process is completed or a timeout occurs */
+
+	timeout = HAL_GetTick();
+
+		while (HAL_GetTick() - timeout < 30000)
+		{
+			if (BSP_SD_GetCardState() == 0)
+			{
+
+				break;
+			}
+		}
+	}
   return (USBD_OK);
   /* USER CODE END 7 */
 }

@@ -44,7 +44,7 @@ FILE * fp;
 
 /* Private variables ---------------------------------------------------------*/
 SD_HandleTypeDef hsd;
-HAL_SD_CardInfoTypeDef SdCard;
+
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -59,7 +59,8 @@ static void MX_SDIO_SD_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+SD_HandleTypeDef hsd;
+HAL_SD_CardInfoTypeDef SdCard;
 /* USER CODE END 0 */
 
 /**
@@ -94,21 +95,13 @@ int main(void)
   MX_USB_DEVICE_Init();
   MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
-//  HAL_SD_WideBusOperation()
   HAL_SD_Init(&hsd);
-  //HAL_SD_WideBusOperation_Config(&hsd, SDIO_BUS_WIDE_4B);
-  HAL_Delay(500);
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_RESET);
+  HAL_SD_ConfigWideBusOperation(&hsd, SDIO_BUS_WIDE_4B);
+  HAL_Delay(500);
+  /* USER CODE END 2 */
 
-
-  fp = fopen('E:\haha.txt','r');
-  if (fp == NULL)
-     {
-       // perror("Error while opening the file.\n");
-        //exit(EXIT_FAILURE);
-	  HAL_Delay(500);
-     }
-
+  /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {

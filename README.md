@@ -97,4 +97,5 @@ The connection between NFC and main STM32F413ZH is not done
 
 The NFC module cannot write in a correct tag format so that the phone cannot read the information.
 
+The mass storage is not stable and hard to detect. it takes about 2-3 mins for computer to recognize.
 *Due to the covid 19, we don't have time to finish this project, but we get a good grade(92.5/100).

@@ -1,5 +1,0 @@
-stm32f0xx_it.c:53:6:SDTimer_Handler	8	static
-stm32f0xx_it.c:80:6:NMI_Handler	8	static
-stm32f0xx_it.c:97:6:SVC_Handler	8	static
-stm32f0xx_it.c:110:6:PendSV_Handler	8	static
-stm32f0xx_it.c:123:6:SysTick_Handler	8	static

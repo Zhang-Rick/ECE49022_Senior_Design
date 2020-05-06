@@ -45,7 +45,7 @@ class Ui_BussinessCard_UI(object):
         self.url_save.setGeometry(QtCore.QRect(10, 230, 62, 20))
         self.url_save.setObjectName("url_save")
         self.pin_label = QtWidgets.QLabel(self.centralwidget)
-        self.pin_label.setGeometry(QtCore.QRect(10, 260, 261, 20))
+        self.pin_label.setGeometry(QtCore.QRect(10, 260, 300, 20))
         font = QtGui.QFont()
         font.setPointSize(9)
         self.pin_label.setFont(font)

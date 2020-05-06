@@ -84,3 +84,11 @@ since image processing is a python file, i decided to integrate with Yuhao’s U
 
 #### Data read through file
 since the value of the decoded Black and white values are stored in SD card, it requires to read the file through SD card by FATFS.
+
+
+## Remaining problem
+The connection between NFC and main STM32F413ZH is not done
+
+The NFC module cannot write in a correct tag format so that the phone cannot read the information.
+
+*Due to the covid 19, we don't have time to finish this project, but we get a good grade(92.5/100).

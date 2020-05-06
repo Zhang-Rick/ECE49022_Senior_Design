@@ -48,8 +48,8 @@ testms_f413_0420.bin \
 all: testms_f413_0420.elf secondary-outputs
 
 # Tool invocations
-testms_f413_0420.elf: $(OBJS) $(USER_OBJS) C:\Users\tonyc\STM32CubeIDE\workspace_1.3.0\testms_f413_0420\STM32F413ZHTX_FLASH.ld
-	arm-none-eabi-gcc -o "testms_f413_0420.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\tonyc\STM32CubeIDE\workspace_1.3.0\testms_f413_0420\STM32F413ZHTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="testms_f413_0420.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+testms_f413_0420.elf: $(OBJS) $(USER_OBJS) D:\github.localRepo\ECE49022_Senior_Design\mass_storage_readwrite\testms_f413_0420\STM32F413ZHTX_FLASH.ld
+	arm-none-eabi-gcc -o "testms_f413_0420.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\github.localRepo\ECE49022_Senior_Design\mass_storage_readwrite\testms_f413_0420\STM32F413ZHTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="testms_f413_0420.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

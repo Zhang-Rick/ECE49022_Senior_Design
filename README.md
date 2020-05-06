@@ -37,8 +37,11 @@ NFC:
 
 ![](images/NFC_block_diagram.PNG)
 
+
 ## Demo Video Link
+
 https://www.youtube.com/watch?v=P2ZDCQjS7qo
+
 
 ## Final Status: 
 #### Songlin Chen:

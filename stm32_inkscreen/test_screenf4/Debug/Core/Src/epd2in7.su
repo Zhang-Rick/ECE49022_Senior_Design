@@ -1,0 +1,11 @@
+epd2in7.c:32:5:EPD_Init	16	static
+epd2in7.c:102:6:EPD_DigitalWrite	24	static
+epd2in7.c:106:5:EPD_DigitalRead	16	static
+epd2in7.c:110:6:EPD_DelayMs	16	static
+epd2in7.c:114:6:EPD_SendCommand	16	static
+epd2in7.c:119:6:EPD_SendData	16	static
+epd2in7.c:124:6:EPD_WaitUntilIdle	16	static
+epd2in7.c:130:6:EPD_Reset	16	static
+epd2in7.c:137:6:EPD_SetLut	24	static
+epd2in7.c:165:6:EPD_DisplayFrame	24	static
+epd2in7.c:188:6:EPD_Sleep	16	static

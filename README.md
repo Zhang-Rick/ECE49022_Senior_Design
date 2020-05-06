@@ -1,6 +1,10 @@
 # ECE49022_Senior_Design
 E-business card
-![](images/sample)
+
+## Ideal sample
+
+![](images/sample.jpg)
+
 ## Introduction
 This Senior Design is going to build a Electronic Business Card that can show a 128*128 imgae on screen with some descriptive text.
 And it does not require any power supply to driver the screen, once the information on screen has been modified. The E-business card

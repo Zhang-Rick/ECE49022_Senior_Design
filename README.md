@@ -37,7 +37,10 @@ NFC:
 
 ![](images/NFC_block_diagram.PNG)
 
-Final Status: 
+## Demo Video Link
+https://www.youtube.com/watch?v=P2ZDCQjS7qo
+
+## Final Status: 
 #### Songlin Chen:
 SD card allows users to drag files into it.
 Users are able to create files in the SD card. 

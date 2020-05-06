@@ -13,6 +13,30 @@ from the NFC module to user's phone. If you are the card owner, you can modify t
 you are only alowed to read the data rather than modify the data. We are using a SD card module, voltage regulator, E-ink Screen, USB mass storage
 and NFC module.
 
+## main block diagram
+![](images/Main_block_diagram.png)
+
+## main system avtivity diagram
+![](images/system_activity_diagram.png)
+
+## subsystem block diagrams
+
+SD_card:
+
+![](images/SD_card_block_diagram.png)
+
+Screen:
+
+![](images/screen_imageProcessing_block_diagram.png)
+
+Image_decoder:
+
+![](images/image_decoder.jpg)
+
+NFC:
+
+![](images/NFC_block_diagram.PNG)
+
 Final Status: 
 #### Songlin Chen:
 SD card allows users to drag files into it.
